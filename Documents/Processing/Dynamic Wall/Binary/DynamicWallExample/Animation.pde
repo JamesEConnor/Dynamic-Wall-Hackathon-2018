@@ -51,7 +51,6 @@ public static class Animation extends WallAnimation {
      else
      {
        int[] bin = getPositionsOfBinary(i + 1);
-       System.out.println(toString(bin));
        
        for(int a = 0; a < bin.length; a++)
          if(bin[a] == 1)
@@ -85,16 +84,6 @@ public static class Animation extends WallAnimation {
      }
      
      return container;
-  }
-  
-  String toString(int[] arr)
-  {
-     String result = "";
-     
-     for(int i : arr)
-       result += i + "";
-       
-     return result;
   }
 
   // Leave this function blank
